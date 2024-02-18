@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --sedans: hsl(31, 77%, 52%);
+    --suv: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+
+    --texto: "Lexend Deca", sans-serif;
+    --titulo: "Big Shoulders Display", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: var(--gray);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+main{
+    .card{
+        width: 1000px;
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8rem 0 1rem 0;
+
+        .car{
+            height: 450px;
+
+            padding: 40px 45px;
+
+            h1{
+                font-family: var(--titulo);
+                color: var(--paragraphs);
+                font-size: 40px;
+                margin: 30px 0 40px 0;
+            }
+
+            p{
+                color: var(--paragraphs);
+                font-family: var(--texto);
+                line-height: 1.5;
+                font-size: 15px;
+                width: 210px;
+            }
+
+            button{
+                background-color: var(--gray);
+                font-family: var(--texto);
+                padding: 15px 25px;
+                margin-top: 50px;
+                border-radius: 25px;
+                border: none;
+                cursor: pointer;
+                transition: .3s;
+            }
+
+            button:hover{
+                background-color: transparent;
+                border: 2px solid var(--gray);
+                color: var(--gray);
+            }
+        }
+
+        .sedan{
+            background-color: var(--sedans);
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+
+
+            button{
+                color: var(--sedans);
+            }
+        }
+
+
+        .suv{
+            background-color: var(--suv);
+
+            button{
+                color: var(--suv);
+            }
+        }
+
+        .luxury{
+            background-color: var(--luxury);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            button{
+                color: var(--luxury);
+            }
+        }
+    }
+}
+
+
+.attribution{
+    font-family: var(--texto);
+    color: rgb(34, 34, 34);
+
+    a{
+        color: hsla(0, 3%, 30%, 0.712);
+    }
+
+    .break{
+        display: none;
+    }
+
+    a:hover{
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: -3rem auto 2rem;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 350px;
+
+            .car{
+                padding: 20px 30px;
+                width: 100%;
+                height: 500px;
+
+                img{
+                    width: 100px;
+                }
+
+                h1{
+                    color: var(--gray);
+                    font-family: var(--titulo);
+                    font-size: 50px;
+                    margin: 20px  0 50px 0;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-family: var(--texto);
+                    color: var(--paragraphs);
+                    margin: 0 0 50px 0;
+                    width: 250px;
+                }
+
+                button{
+                    background-color: var(--gray);
+                    font-family: var(--texto);
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: .3s;
+                }
+
+                button:hover{
+                    background-color: transparent;
+                    border: 2px solid var(--gray);
+                    color: var(--gray);
+                }
+            }
+
+            
+
+            .sedan{
+                background-color: var(--sedans);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0;
+
+                    button{
+                        color: var(--sedans);
+                    }
+            }
+
+            .suv{
+                background-color: var(--suv);
+
+                    button{
+                        color: var(--suv);
+                    }
+            }
+
+            .luxury{
+                background-color: var(--luxury);
+                border-bottom-left-radius: 5px;
+                border-top-right-radius: 0;
+
+                    button{
+                        color: var(--luxury);
+                    }
+            }
+        }
+    }
+
+    .attribution{
+        margin-bottom: 2rem;
+        font-size: 18px;
+
+        .break{
+            display: block;
+        }
+    }
+}
