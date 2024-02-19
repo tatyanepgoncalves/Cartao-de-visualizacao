@@ -1,4 +1,4 @@
-# <h1 align="center"> Cartão de Visualização em três colunas📝</h1>
+# <h1 align="center"> Results summary component solution📝</h1>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
